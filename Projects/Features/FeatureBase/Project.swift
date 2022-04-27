@@ -15,7 +15,8 @@ let project = Project(
     targets: Project.staticLibrary(
         name: "FeatureBase",
         frameworkDependencies: [
-            .project(target: "DesignSystem", path: "../../DesignSystem")
+            .project(target: "DesignSystem", path: .relativeToDesignSystem("")),
+            .project(target: "CoreKit", path: .relativeToCoreKit(""))
         ],
         testDependencies: []
     ),

@@ -11,8 +11,6 @@ import ProjectDescriptionHelpers
 let workspace = Workspace(
     name: "App",
     projects: [
-        "Projects/Application",
-        "Projects/DesignSystem",
-        "Projects/Features"
+        "Projects/Application"
     ]
 )

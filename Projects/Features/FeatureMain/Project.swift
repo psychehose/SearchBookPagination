@@ -15,7 +15,7 @@ let project = Project(
     targets: Project.staticLibrary(
         name: "FeatureMain",
         frameworkDependencies: [
-            .project(target: "FeatureBase", path: "../FeatureBase")
+            .project(target: "FeatureBase", path: .relativeToFeature("FeatureBase"))
         ],
         testDependencies: []
     ),

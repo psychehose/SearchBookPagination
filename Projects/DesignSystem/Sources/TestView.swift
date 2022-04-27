@@ -10,11 +10,12 @@ import Foundation
 
 import UIKit
 import SnapKit
+import ResourcePackage
 
 final class TestView: UIView {
     let button: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .red
+        button.backgroundColor = R.Color.Color1
         return button
     }()
     override init(frame: CGRect) {

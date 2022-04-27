@@ -36,3 +36,32 @@ extension Project {
     }
 }
 
+public extension ProjectDescription.Path {
+    static func relativeToModule(_ pathString: String) -> Self {
+        return .relativeToRoot("Projects/Modules/\(pathString)")
+    }
+    static func relativeToFeature(_ pathString: String) -> Self {
+        return .relativeToRoot("Projects/Features/\(pathString)")
+    }
+    static func relativeToUserInterface(_ pathString: String) -> Self {
+        return .relativeToRoot("Projects/UserInterface/\(pathString)")
+    }
+    static func relativeToDomain(_ pathString: String) -> Self {
+        return .relativeToRoot("Projects/Domain/\(pathString)")
+    }
+    static func relativeToDataRepository(_ pathString: String) -> Self {
+        return .relativeToRoot("Projects/DataRepository/\(pathString)")
+    }
+    static func relativeToNetwork(_ pathString: String) -> Self {
+        return .relativeToRoot("Projects/Network/\(pathString)")
+    }
+    static func relativeToDesignSystem(_ pathString: String) -> Self {
+        return .relativeToRoot("Projects/DesignSystem/\(pathString)")
+    }
+    static func relativeToCoreKit(_ pathString: String) -> Self {
+        return .relativeToRoot("Projects/CoreKit/\(pathString)")
+    }
+    static var app: Self {
+        return .relativeToRoot("Projects/App")
+    }
+}

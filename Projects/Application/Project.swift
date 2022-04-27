@@ -15,7 +15,10 @@ let project = Project(
     targets: Project.appTargets(
         name: "TestModularArchi",
         appDependencies: [
-            .project(target: "Features", path: "../Features")
+            .project(
+                target: "Features",
+                path: .relativeToFeature("")
+            )
         ],
         testDependencies: []
     ),

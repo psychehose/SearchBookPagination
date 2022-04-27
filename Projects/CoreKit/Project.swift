@@ -2,24 +2,22 @@
 //  Project.swift
 //  ProjectDescriptionHelpers
 //
-//  Created by KIM HOSE on 2022/04/26.
+//  Created by KIM HOSE on 2022/04/27.
 //
 
 import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project(
-    name: "DesignSystem",
+    name: "CoreKit",
     organizationName: "com.hose",
     packages: [
-        .local(path: .relativeToRoot("Projects/ResourcePackage"))
+        .local(path: .relativeToRoot("Projects/RxPackage"))
     ],
     targets: Project.dynamicFramework(
-        name: "DesignSystem",
+        name: "CoreKit",
         frameworkDependencies: [
-            .external(name: "FlexLayout"),
-            .external(name: "PinLayout"),
-            .external(name: "SnapKit"),
+            .external(name: "Alamofire")
         ],
         testDependencies: []
     ),

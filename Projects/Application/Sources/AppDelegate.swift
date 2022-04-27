@@ -1,4 +1,7 @@
 import UIKit
+import Features
+import FeatureLogin
+import RIBs
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -10,12 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
     ) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let viewController = UIViewController()
+//        let viewController = UIViewController()
+        let viewController = FeatureLogin.TestLoginViewController()
         viewController.view.backgroundColor = .white
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
-        print("hi")
-
         return true
     }
 
