@@ -9,11 +9,11 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project(
-    name: "FeatureLogin",
-    organizationName: "com.hose",
+    name: "FeatureLoggedIn",
+    organizationName: "com.psychehose",
     packages: [],
     targets: Project.staticLibrary(
-        name: "FeatureLogin",
+        name: "FeatureLoggedIn",
         frameworkDependencies: [
             .project(target: "FeatureBase", path: .relativeToFeature("FeatureBase"))
         ],

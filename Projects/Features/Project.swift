@@ -10,13 +10,13 @@ import ProjectDescriptionHelpers
 
 let project = Project(
     name: "Features",
-    organizationName: "com.hose",
+    organizationName: "com.psychehose",
     packages: [],
     targets: Project.dynamicFramework(
         name: "Features",
         frameworkDependencies: [
-            .project(target: "FeatureLogin", path: .relativeToFeature("FeatureLogin")),
-            .project(target: "FeatureMain", path: .relativeToFeature("FeatureMain")),
+            .project(target: "FeatureLoggedIn", path: .relativeToFeature("FeatureLoggedIn")),
+            .project(target: "FeatureLoggedOut", path: .relativeToFeature("FeatureLoggedOut"))
         ],
         testDependencies: []
     ),

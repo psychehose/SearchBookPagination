@@ -10,7 +10,7 @@ import ProjectDescriptionHelpers
 
 let project = Project(
     name: "CoreKit",
-    organizationName: "com.hose",
+    organizationName: "com.psychehose",
     packages: [
         .local(path: .relativeToRoot("Projects/RxPackage"))
     ],

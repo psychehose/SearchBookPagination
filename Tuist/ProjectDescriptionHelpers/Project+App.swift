@@ -17,7 +17,7 @@ extension Project {
             name: name,
             platform: .iOS,
             product: .app,
-            bundleId: "com.hose.\(name)",
+            bundleId: "com.psychehose.\(name)",
             infoPlist: .default,
             sources: ["Sources/**/*.swift"],
             resources: ["Resources/**"],
@@ -27,7 +27,7 @@ extension Project {
             name: "\(name)Tests",
             platform: .iOS,
             product: .unitTests,
-            bundleId: "com.hose.\(name)Tests",
+            bundleId: "com.psychehose.\(name)Tests",
             infoPlist: .default,
             sources: ["Tests/**"],
             dependencies: [.target(name: name)] + testDependencies

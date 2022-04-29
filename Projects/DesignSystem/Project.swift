@@ -10,7 +10,7 @@ import ProjectDescriptionHelpers
 
 let project = Project(
     name: "DesignSystem",
-    organizationName: "com.hose",
+    organizationName: "com.psychehose",
     packages: [
         .local(path: .relativeToRoot("Projects/ResourcePackage"))
     ],

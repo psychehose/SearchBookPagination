@@ -9,11 +9,11 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project(
-    name: "TestModularArchi",
-    organizationName: "com.hose",
+    name: "RIBsTutorial-Completed",
+    organizationName: "com.psychehose",
     packages: [],
     targets: Project.appTargets(
-        name: "TestModularArchi",
+        name: "RIBsTutorial-Completed",
         appDependencies: [
             .project(
                 target: "Features",

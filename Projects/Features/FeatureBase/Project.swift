@@ -10,7 +10,7 @@ import ProjectDescriptionHelpers
 
 let project = Project(
     name: "FeatureBase",
-    organizationName: "com.hose",
+    organizationName: "com.psychehose",
     packages: [],
     targets: Project.staticLibrary(
         name: "FeatureBase",
