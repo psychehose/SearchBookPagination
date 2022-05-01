@@ -13,12 +13,21 @@ extension Project {
         appDependencies: [TargetDependency],
         testDependencies: [TargetDependency]
     ) -> [Target] {
+        
+        let infoPlist: [String: InfoPlist.Value] = [
+            "CFBundleShortVersionString": "1.0",
+            "CFBundleVersion": "1",
+            "UIMainStoryboardFile": "",
+            "UILaunchStoryboardName": "LaunchScreen"
+        ]
+        
         let mainTarget = Target(
             name: name,
             platform: .iOS,
             product: .app,
             bundleId: "com.psychehose.\(name)",
-            infoPlist: .default,
+            deploymentTarget: .iOS(targetVersion: "13.0", devices: .iphone),
+            infoPlist: .extendingDefault(with: infoPlist),
             sources: ["Sources/**/*.swift"],
             resources: ["Resources/**"],
             dependencies: appDependencies
@@ -28,6 +37,7 @@ extension Project {
             platform: .iOS,
             product: .unitTests,
             bundleId: "com.psychehose.\(name)Tests",
+            deploymentTarget: .iOS(targetVersion: "13.0", devices: .iphone),
             infoPlist: .default,
             sources: ["Tests/**"],
             dependencies: [.target(name: name)] + testDependencies
