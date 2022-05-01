@@ -9,16 +9,15 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project(
-    name: "FeatureLoggedOut",
+    name: "FeatureSearch",
     organizationName: "com.psychehose",
     packages: [],
     targets: Project.staticLibrary(
-        name: "FeatureLoggedOut",
+        name: "FeatureSearch",
         frameworkDependencies: [
             .project(target: "FeatureBase", path: .relativeToFeature("FeatureBase"))
         ],
         testDependencies: []
     ),
-    
     schemes: []
 )

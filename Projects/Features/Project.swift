@@ -15,8 +15,7 @@ let project = Project(
     targets: Project.dynamicFramework(
         name: "Features",
         frameworkDependencies: [
-            .project(target: "FeatureLoggedIn", path: .relativeToFeature("FeatureLoggedIn")),
-            .project(target: "FeatureLoggedOut", path: .relativeToFeature("FeatureLoggedOut"))
+            .project(target: "FeatureSearch", path: .relativeToFeature("FeatureSearch")),
         ],
         testDependencies: []
     ),

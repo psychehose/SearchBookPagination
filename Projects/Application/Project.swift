@@ -9,11 +9,11 @@ import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project(
-    name: "RIBsTutorial-Completed",
+    name: "SearchBookPagination",
     organizationName: "com.psychehose",
     packages: [],
     targets: Project.appTargets(
-        name: "RIBsTutorial-Completed",
+        name: "SearchBookPagination",
         appDependencies: [
             .project(
                 target: "Features",
