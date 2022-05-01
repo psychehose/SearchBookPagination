@@ -2,20 +2,20 @@
 //  Project.swift
 //  ProjectDescriptionHelpers
 //
-//  Created by KIM HOSE on 2022/04/26.
+//  Created by 김호세 on 2022/05/01.
 //
 
 import ProjectDescription
 import ProjectDescriptionHelpers
 
 let project = Project(
-    name: "Features",
+    name: "FeatureRoot",
     organizationName: "com.psychehose",
     packages: [],
-    targets: Project.dynamicFramework(
-        name: "Features",
+    targets: Project.staticLibrary(
+        name: "FeatureRoot",
         frameworkDependencies: [
-            .project(target: "FeatureRoot", path: .relativeToFeature("FeatureRoot")),
+            .project(target: "FeatureSearch", path: .relativeToFeature("FeatureSearch"))
         ],
         testDependencies: []
     ),
