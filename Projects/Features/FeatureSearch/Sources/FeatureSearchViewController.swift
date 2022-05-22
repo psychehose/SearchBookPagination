@@ -23,6 +23,7 @@ final public class FeatureSearchViewController: UIViewController, FeatureSearchP
 
   public override func viewDidLoad() {
     super.viewDidLoad()
+    print("Okay 저축은행")
     makeUI()
   }
   weak var listener: FeatureSearchPresentableListener?
